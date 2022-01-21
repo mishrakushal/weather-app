@@ -1,0 +1,123 @@
+body {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    margin-top: 12%;
+    background-color: #023E8A;
+}
+
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em 1em;
+    height: 17em;
+    width: 12em;
+    background-color: #000000d0;
+    color: white;
+    margin: 1.5em;
+    border-radius: 0.7em;
+    transition: all 100ms ease-in-out;
+
+}
+
+h1.temp {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.cardLeftOuter {
+    background-image: url("https://source.unsplash.com/274x370/?landscape");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.7em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 100ms ease-in-out;
+}
+
+.card-right {
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-between;
+    background-color: #07074A;
+    height: 17em;
+    width: 15em;
+    border-radius: 0 0.7em 0.7em 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    background: #8a8a8a2b;
+    color: white;
+    outline: none;
+    transition: all 100ms ease-in-out;
+}
+
+button:hover {
+    background-color: #7c7c7c6b;
+    cursor: pointer;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1.2em;
+    border-radius: 1.5em;
+    background-color: #00B4D8;
+    color: white;
+    font-family: inherit;
+    font-weight: 300;
+    width: calc(100% - 7em);
+    min-width: 5em;
+    height: 2.2em;
+}
+
+::placeholder {
+    color: white;
+}
+
+.pressure, .humidity, .wind {
+    font-size: 1.09em;
+    padding: 0.8em 0;
+    padding-left: 1em;
+    transition: all 100ms ease-in-out;
+}
+
+.pressure:hover, .humidity:hover, .wind:hover {
+    transform: translateX(0.5em) scale(1.1);
+}
+
+.description {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin-left: 0.5em;
+}
+
+.cardLeftOuter:hover {
+    transform: scale(1.05);
+}
